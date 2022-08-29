@@ -5,33 +5,31 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
-	    <style type="text/css">
-	    	body{
-	    		color: black;
+	    <style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
 
-	    	}
+.item5 { grid-area: footer; }
 
-
-	    	div {  
-    x: 0.5;
-    y: 0.5;
-    width: 1920px;
-    height: 134.19px;
-    stroke-miterlimit: 10;
-    stroke: #000;
-    fill: #8bb7b3; 
-    background: #8bb7b3; }
-
-    h3{
-    	  
-    fill: #fff;
-    font-family: ArtifaktElement-Book, 'Artifakt Element';
-    font-size: 30px;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main main'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
 }
 
-
-
-    </style>
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
 </head>
 
 
